@@ -27,6 +27,7 @@ console.log("AQUI X");
  
  const screens = [
  
+ 
  (...args: any) => <Screen pass={{
  pathScreen:"home",
  
@@ -40,7 +41,8 @@ console.log("AQUI X");
  }
  ],
  
- screenElements:[(...args:any) => <Elements.Text pass={{
+ screenElements:[
+ (...args:any) => <Elements.Text pass={{
  arrProps: [
  {}
  ],
@@ -55,7 +57,54 @@ console.log("AQUI X");
  
  args,
  
+ }}/>, (...args:any) => <Elements.Text pass={{
+ arrProps: [
+ {}
+ ],
+ 
+ arrStyles: [
+ { color: 'white', fontSize: 14, }
+ ],
+ 
+ children: [
+ "Escreva..."
+ ],
+ 
+ args,
+ 
  }}/>],
+ 
+ startFunctions:[()=>{}],
+ 
+ args,
+ }}/>, 
+ (...args: any) => <Screen pass={{
+ pathScreen:"home",
+ 
+ styles:[
+ {
+ backgroundColor: '#101',
+ justifyContent: 'center',
+ alignItems: 'center',
+ height: '100%',
+ width: '100%',
+ }
+ ],
+ 
+ screenElements:[() => {
+ const textStyle = {
+ fontSize: 20,
+ color: '#fff2',
+ textAlign:'center',
+ maxWidth: 200,
+ // maxWidth: '200px'<= #ATTENTION: Native ERROR! No string!
+ };
+ 
+ return (
+ <RN.Text style={textStyle}>
+ {'Adicione Elementos nessa tela!'}
+ </RN.Text>);
+ }],
  
  startFunctions:[()=>{}],
  
