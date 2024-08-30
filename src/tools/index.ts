@@ -1,4 +1,10 @@
 
-export const tools = () => {
-    console.log("Welcome to the tools!")
-}
+// ---------- import Local Tools
+// import { customs } from './customs';
+import { base } from './base';
+
+export const tools = {
+  // customs,
+  ...base,
+};
+

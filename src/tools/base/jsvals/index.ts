@@ -1,6 +1,6 @@
 
 // ---------- import Local Tools
-import { argSel, getCtData } from './src/tools/base/project';
+import { argSel, getCtData } from '../project';
 
 const css2 =
   'color: cyan; background-color: #444; font-size: 11px; padding: 2px 6px; border-radius: 3px';
@@ -48,57 +48,55 @@ export const argReader = (props: Tprops_argReader) => {
   return returnArgValue;
 };
 
-// ------------ j3 to joinStringValue
-// ----------------------------------
-type Tprops_joinStringValue = {
-  pass: { arrayStrings: any; joinSeparator: any };
-};
-export const joinStringValue = (props: Tprops_joinStringValue) => {
+// ------------ joinStringValue
+// ----------------------------
+type Tprops_j3 = { pass: { arrayStrings: any; joinSeparator: any } };
+export const j3 = (props: Tprops_j3) => {
   const { arrayStrings, joinSeparator } = props.pass;
 
   return arrayStrings.join(joinSeparator);
 };
 
-// --------- j7 to propJsonStrignify
-// ---------------------------------
-type Tprops_propJsonStrignify = {
+// --------- propJsonStrignify
+// ---------------------------
+type Tprops_j7 = {
   pass: { objectProperties: any };
 };
-export const propJsonStrignify = (props: Tprops_propJsonStrignify) => {
+export const j7 = (props: Tprops_j7) => {
   const { objectProperties } = props.pass;
 
   return JSON.stringify(objectProperties);
 };
 
-// ------------------------ Direct Return
-// ---------------------- j8 to freeValue
+// ---------------------- Direct Return
 // -------- propObj, propString, propArray
-// ---- stringValue, arrayValue, freeValue
-type Tprops_freeValue = {
+// ------ stringValue, arrayValue, freeValue
+type Tprops_j8 = {
   pass: { propertieValues: any };
 };
-export const freeValue = (props: Tprops_freeValue) => {
+export const j8 = (props: Tprops_j8) => {
   const { propertieValues } = props.pass;
 
   return propertieValues;
 };
 
-// ---------- prop j10 to urlEncoded
-// ---------------------------------
-type Tprops_urlEncoded = {
+// ---------- prop urlEncoded
+// --------------------------
+type Tprops_j10 = {
   pass: { objectProperties: {} };
 };
-export const urlEncoded = (props: Tprops_urlEncoded) => {
+export const j10 = (props: Tprops_j10) => {
   const { objectProperties } = props.pass;
 
   return new URLSearchParams(objectProperties);
 };
 
-// ---------------- j12 to toggleVar
-// ---------------------------------
-type Tprops_toggleVar = { pass: { varToToggle: any; args: any } };
-export const toggleVar = (props: Tprops_toggleVar) => {
+// ---------------- toggleVar
+// --------------------------
+type Tprops_j12 = { pass: { varToToggle: any; args: any } };
+export const j12 = (props: Tprops_j12) => {
   const { varToToggle, args } = props.pass;
 
   return varToToggle;
 };
+

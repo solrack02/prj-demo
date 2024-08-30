@@ -12,3 +12,4 @@ export const mapElements = (list: Tlist, args?: any) => {
     ));
   return condCall ? renderList() : <></>;
 };
+

@@ -10,3 +10,4 @@ export const pathSel = (obj?: any, path?: any) => {
 
   return valueSel;
 };
+

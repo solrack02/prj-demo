@@ -47,3 +47,4 @@ export const Text = (props: Tprops) => {
   // ---------- set Render
   return <RNText {...allProps} />;
 };
+
