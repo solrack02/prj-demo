@@ -15,3 +15,4 @@ RN.AppRegistry.registerComponent('App', () => App);
 RN.AppRegistry.runApplication('App', {
   rootTag: document.getElementById('root'),
 });
+
