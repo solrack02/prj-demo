@@ -19,7 +19,7 @@
           import { tools } from './tools';
 
           // ---------- set Caps Inputs
-          const currRoute = 'home';
+          const currRoute = 'ab0login';
 
           let args: any = [];
 
@@ -27,32 +27,355 @@
             // 
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"home",
+          pathScreen:"ab0login",
 
           styles:[
-              {
-                backgroundColor: '#101',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: '100%',
-                width: '100%',
-              }
-              ],
 
-          screenElements:[() => {
-                  const textStyle = {
-                    fontSize: 20,
-                    color: '#fff2',
-                    textAlign:'center',
-                    maxWidth: 200,
-                    // maxWidth: '200px'<= #ATTENTION: Native ERROR! No string!
-                  };
+stls.flex({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "1px"
+        }})] }}), 
+stls.width({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "100%"
+        }})] }}), stls.height({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "100%"
+        }})] }}), 
 
-                  return (
-                    <RN.Text style={textStyle}>
-                      {'Adicione Elementos nessa tela!'}
-                    </RN.Text>);
-                }],
+stls.alignItems({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "center"
+        }})] }}), stls.justifyContent({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "center"
+        }})] }}), stls.backgroundColor({ pass: { arrayValue: [jsvals.varReader({pass: {
+          path: jsvals.j8({pass: {
+          propertieValues: "all.colors.primary"
+        }})
+        }})] }})],
+
+          screenElements:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:[{}],
+
+            styles:[
+
+stls.alignItems({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "center"
+        }})] }}), stls.justifyContent({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "center"
+        }})] }}), 
+stls.padding({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "15px"
+        }})] }}), 
+stls.borderRadius({ pass: { arrayValue: [10] }}), 
+stls.shadows({ pass: {
+          shadowColor: [jsvals.varReader({pass: {
+          path: jsvals.j8({pass: {
+          propertieValues: "all.colors.dark"
+        }})
+        }})],
+          shadowOffset: ['{width: 0, height: 0}'],
+          shadowOpacity: [jsvals.j8({pass: {
+          propertieValues: "0.2"
+        }})],
+          shadowRadius: [jsvals.j8({pass: {
+          propertieValues: "10px"
+        }})],
+        }}), 
+stls.maxWidth({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "260px"
+        }})] }}), stls.backgroundColor({ pass: { arrayValue: [jsvals.varReader({pass: {
+          path: jsvals.j8({pass: {
+          propertieValues: "all.colors.light"
+        }})
+        }})] }})],
+
+            variablePath:[ ],
+
+            expectedVal:[ ],
+
+            childrenItems:[
+        (...args:any) => <Elements.Pressable3 pass={{
+          elementProperties: [{}],
+
+          styles: [
+stls.paddingHorizontal({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "30px"
+        }})] }}), 
+stls.paddingVertical({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "6px"
+        }})] }}), 
+stls.borderRadius({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "8px"
+        }})] }}), 
+stls.backgroundColor({ pass: { arrayValue: [jsvals.varReader({pass: {
+          path: jsvals.j8({pass: {
+          propertieValues: "all.colors.primary"
+        }})
+        }})] }}), 
+stls.alignItems({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "center"
+        }})] }}), stls.justifyContent({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "center"
+        }})] }})],
+
+          childrenItems: [(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            {}
+          ],
+
+          arrStyles: [
+            stls.color({ pass: { arrayValue: ["white"] }})
+          ],
+
+          children: [
+            jsvals.j8({pass: {
+          propertieValues: "A1 Login ADM"
+        }})
+          ],
+
+          args,
+
+        }}/>],
+
+          pressableFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a1login");
+        }
+        ],
+
+          args,
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:[{}],
+
+            styles:[stls.height({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "10px"
+        }})] }})],
+
+            variablePath:[ ],
+
+            expectedVal:[ ],
+
+            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Pressable3 pass={{
+          elementProperties: [{}],
+
+          styles: [
+stls.paddingHorizontal({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "30px"
+        }})] }}), 
+stls.paddingVertical({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "6px"
+        }})] }}), 
+stls.borderRadius({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "8px"
+        }})] }}), 
+stls.backgroundColor({ pass: { arrayValue: [jsvals.varReader({pass: {
+          path: jsvals.j8({pass: {
+          propertieValues: "all.colors.primary"
+        }})
+        }})] }}), 
+stls.alignItems({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "center"
+        }})] }}), stls.justifyContent({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "center"
+        }})] }})],
+
+          childrenItems: [(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            {}
+          ],
+
+          arrStyles: [
+            stls.color({ pass: { arrayValue: ["white"] }})
+          ],
+
+          children: [
+            jsvals.j8({pass: {
+          propertieValues: "B1 Login APP"
+        }})
+          ],
+
+          args,
+
+        }}/>],
+
+          pressableFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("b1login");
+        }
+        ],
+
+          args,
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:[{}],
+
+            styles:[stls.height({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "10px"
+        }})] }})],
+
+            variablePath:[ ],
+
+            expectedVal:[ ],
+
+            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Pressable3 pass={{
+          elementProperties: [{}],
+
+          styles: [
+stls.paddingHorizontal({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "30px"
+        }})] }}), 
+stls.paddingVertical({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "6px"
+        }})] }}), 
+stls.borderRadius({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "8px"
+        }})] }}), 
+stls.backgroundColor({ pass: { arrayValue: [jsvals.varReader({pass: {
+          path: jsvals.j8({pass: {
+          propertieValues: "all.colors.primary"
+        }})
+        }})] }}), 
+stls.alignItems({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "center"
+        }})] }}), stls.justifyContent({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "center"
+        }})] }})],
+
+          childrenItems: [(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            {}
+          ],
+
+          arrStyles: [
+            stls.color({ pass: { arrayValue: ["white"] }})
+          ],
+
+          children: [
+            jsvals.j8({pass: {
+          propertieValues: "Dev Tools"
+        }})
+          ],
+
+          args,
+
+        }}/>],
+
+          pressableFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a0devtools");
+        }
+        ],
+
+          args,
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:[{}],
+
+            styles:[stls.height({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "10px"
+        }})] }})],
+
+            variablePath:[ ],
+
+            expectedVal:[ ],
+
+            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:[{}],
+
+            styles:[stls.height({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "10px"
+        }})] }})],
+
+            variablePath:[ ],
+
+            expectedVal:[ ],
+
+            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Pressable3 pass={{
+          elementProperties: [{}],
+
+          styles: [
+stls.paddingHorizontal({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "30px"
+        }})] }}), 
+stls.paddingVertical({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "6px"
+        }})] }}), 
+stls.borderRadius({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "8px"
+        }})] }}), 
+stls.backgroundColor({ pass: { arrayValue: [jsvals.varReader({pass: {
+          path: jsvals.j8({pass: {
+          propertieValues: "all.colors.primary"
+        }})
+        }})] }}), 
+stls.alignItems({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "center"
+        }})] }}), stls.justifyContent({ pass: { arrayValue: [jsvals.j8({pass: {
+          propertieValues: "center"
+        }})] }})],
+
+          childrenItems: [(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            {}
+          ],
+
+          arrStyles: [
+            stls.color({ pass: { arrayValue: ["white"] }})
+          ],
+
+          children: [
+            jsvals.j8({pass: {
+          propertieValues: "Testing Now"
+        }})
+          ],
+
+          args,
+
+        }}/>],
+
+          pressableFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("b3MyProfile");
+        }
+        ],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        ],
 
           startFunctions:[()=>{}],
 
