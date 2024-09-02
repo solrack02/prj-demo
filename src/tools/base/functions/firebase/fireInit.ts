@@ -12,7 +12,7 @@ export const fireInit = async (props: Tprops) => {
 
   if (typeof fbConfig === 'object') {
     // ---------- set FB Init on a Variable
-    const fbInit = FB_APP.initializeApp(fbConfig, 'secondary');
+
 
     for (const currFunc of arrFuncs) {
       await currFunc(fbInit, args);
