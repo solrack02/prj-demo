@@ -19539,7 +19539,8 @@
     "capsCodeInfo": {
       "1": {
         "capsLabel": {
-          "pt-br": "firestore getDocs"
+          "pt-br": "firestore getDocs",
+          "en": "firestore getDocs"
         },
         "capsVersionCreatedAt": {
           "seconds": 1669821908,
@@ -19818,7 +19819,8 @@
     "capsCodeInfo": {
       "1": {
         "capsLabel": {
-          "pt-br": "firestore upload"
+          "pt-br": "firestore upload",
+          "en": "firestore upload"
         },
         "capsDescription": {
           "pt-br": ""
@@ -19952,10 +19954,12 @@
     "capsCodeInfo": {
       "1": {
         "capsLabel": {
-          "pt-br": "firestore where"
+          "pt-br": "firestore where",
+          "en": "firestore where"
         },
         "capsDescription": {
-          "pt-br": "Usada para \"pegar\" documentos específicos de acordo com a instrução fornecida."
+          "pt-br": "Usada para \"pegar\" documentos específicos de acordo com a instrução fornecida.",
+          "en": ""
         },
         "capsCodeTypes": ["customs", "function", "firestore", "where"],
         "capsCodeText": "async (...args) =>\n        functions.firebase.where({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrWhere: [!#!where params!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
