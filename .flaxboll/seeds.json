@@ -19328,10 +19328,12 @@
     "capsCodeInfo": {
       "1": {
         "capsLabel": {
-          "pt-br": "firestore deleteDoc"
+          "pt-br": "firestore deleteDoc",
+          "en": "firestore deleteDoc"
         },
         "capsDescription": {
-          "pt-br": ""
+          "pt-br": "",
+          "en": ""
         },
         "capsCodeTypes": ["function", "firestore", "deleteDoc"],
         "capsCodeText": "(...args) =>\n        functions.firebase.deleteDoc({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
@@ -19427,7 +19429,8 @@
     "capsCodeInfo": {
       "1": {
         "capsLabel": {
-          "pt-br": "firestore updateDoc"
+          "pt-br": "firestore updateDoc",
+          "en": "firestore updateDoc"
         },
         "capsVersionCreatedAt": {
           "seconds": 1669821908,
@@ -19437,7 +19440,8 @@
         "capsCodeVersionID": "1",
         "capsCodeText": "async (...args) =>\n        functions.firebase.updateDoc({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrPathData: [!#!path to data!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
         "capsDescription": {
-          "pt-br": ""
+          "pt-br": "",
+          "en": ""
         },
         "capsCodeInputs": {
           "ccc_fireUpdateDoc-0": {
@@ -19626,7 +19630,8 @@
     "capsCodeInfo": {
       "1": {
         "capsLabel": {
-          "pt-br": "firestore getDoc (single doc)"
+          "pt-br": "firestore getDoc (single doc)",
+          "en": "firestore getDoc (single doc)"
         },
         "capsVersionCreatedAt": {
           "seconds": 1669821908,
@@ -19636,7 +19641,8 @@
         "capsCodeVersionID": "1",
         "capsCodeText": "async (...args) =>\n        functions.firebase.getDoc({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
         "capsDescription": {
-          "pt-br": ""
+          "pt-br": "",
+          "en": ""
         },
         "capsCodeInputs": {
           "ccc_fireGetDoc-0": {
@@ -19716,7 +19722,8 @@
     "capsCodeInfo": {
       "1": {
         "capsLabel": {
-          "pt-br": "firestore setDoc"
+          "pt-br": "firestore setDoc",
+          "en": "firestore setDoc"
         },
         "capsVersionCreatedAt": {
           "seconds": 1669821908,
@@ -19726,7 +19733,8 @@
         "capsCodeVersionID": "1",
         "capsCodeText": "async (...args) =>\n        functions.firebase.setDoc({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrPathData: [!#!path to data!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
         "capsDescription": {
-          "pt-br": ""
+          "pt-br": "",
+          "en": ""
         },
         "capsCodeInputs": {
           "ccc_fireSetDoc-0": {
@@ -20063,7 +20071,8 @@
     "capsCodeInfo": {
       "1": {
         "capsLabel": {
-          "pt-br": "init firebase"
+          "pt-br": "init firebase",
+          "en": "init firebase"
         },
         "capsVersionCreatedAt": {
           "seconds": 1669821908,
