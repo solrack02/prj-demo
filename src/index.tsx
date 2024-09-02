@@ -377,11 +377,7 @@ stls.alignItems({ pass: { arrayValue: [jsvals.j8({pass: {
           }}/>
         ],
 
-          startFunctions:[async (...args) =>
-        functions.firebase.fireInit({ args, pass:{
-          fbConfig: 'noPath',
-          arrFuncs: [()=>{}]
-        }})],
+          startFunctions:[()=>{}],
 
           args,
         }}/>
