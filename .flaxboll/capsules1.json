@@ -15036,42 +15036,5 @@
         }
       }
     }
-  },
-  "a0c764bf-de1a-4290-be77-f238007a7d84": {
-    "capsType": "useCode",
-    "capsDB": {
-      "capsID": "a0c764bf-de1a-4290-be77-f238007a7d84",
-      "capsPrjID": "ppp_01",
-      "capsUserID": "uuu_01",
-      "capsCreatedAt": 1713797035692
-    },
-    "capsUseCodeInfo": {
-      "capsUseFSPath": "src/index.tsx",
-      "capsCodeID": "ccc_stringValue",
-      "capsCodeVersionID": "1",
-      "capsUpdatedAt": [1713797035692],
-      "capsUseLabel": { "pt-br": "valor string", "en": "valor string" },
-      "capsUseDescription": {
-        "pt-br": "sc.A1.toggles.userBlock",
-        "en": "sc.A1.toggles.userBlock"
-      },
-      "capsUseInputs": {
-        "ccc_stringValue-0": {
-          "capsIptCodeID": "ccc_stringValue-0",
-          "capsIptTxtValue": "sc.A1.toggles.userBlock"
-        }
-      },
-      "capsUseConections": "16",
-      "parents": {
-        "conn_1": {
-          "connID": "conn_1",
-          "capsParentIptID": "ccc_setVar-0",
-          "parentData": {
-            "parentConnID": "conn_1",
-            "capsParentID": "364be701-3413-499c-92dc-c6be18230f33"
-          }
-        }
-      }
-    }
   }
 }
