@@ -2,7 +2,7 @@
 // ---------- import Packs
 import { ViewStyle } from 'react-native';
 import { useEffect, useState } from 'react';
-import { Picker } from 'react-native-picker;
+import { Picker } from 'react-native-picker';
 
 // ---------- import Local Tools
 import { pathSel, setData } from '../../base/project';
