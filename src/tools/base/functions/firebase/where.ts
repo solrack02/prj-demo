@@ -1,5 +1,5 @@
 
-import * as FB_FIRE from 'firebase@latest';
+import * as FB_FIRE from 'firebase@10.13.1/firebase-firestore-compat.js';
 
 type Tprops = {
   args: any;
