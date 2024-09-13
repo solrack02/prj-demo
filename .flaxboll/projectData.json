@@ -29,6 +29,20 @@
             "capsID": "da65ac5c-2158-4ca1-a11a-b94dfc2f4ed7",
             "connID": "conn_1",
             "capsPosition": 3
+          },
+            "ccc_4": {
+            "gpID": "ggg_1",
+            "capsControlID": "ccc_1",
+            "capsID": "c35a4f08-ff83-4f9b-bb9b-dd731347177b",
+            "connID": "conn_1",
+            "capsPosition": 4
+          },
+            "ccc_5": {
+            "gpID": "ggg_1",
+            "capsControlID": "ccc_1",
+            "capsID": "c95b38b3-6e11-4f55-a306-fdb2bb5af7f0",
+            "connID": "conn_1",
+            "capsPosition": 5
           }
         }
       }
