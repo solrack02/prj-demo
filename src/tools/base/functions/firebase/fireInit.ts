@@ -1,6 +1,6 @@
 
 console.log('dentro do FBINIT 1');
-import * as FB_APP from 'firebase';
+import * as FB_APP from 'firebase@10.12.5/firebase-app.js';
 console.log('dentro do FBINIT 2');
 
 type Tprops = { args: any; pass: { fbConfig: any; arrFuncs: any[] } };
@@ -28,3 +28,4 @@ export const fireInit = async (props: Tprops) => {
     console.log('fbConfig precisa ser um objeto', { fbConfig });
   }
 };
+
