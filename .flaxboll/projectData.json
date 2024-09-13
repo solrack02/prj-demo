@@ -14,7 +14,7 @@
             "capsControlID": "ccc_1",
             "capsID": "425becc0-bc83-497d-9046-fcb82fce618a",
             "connID": "conn_1",
-            "capsPosition": 1
+            "capsPosition": 3
           },
             "ccc_2": {
             "gpID": "ggg_1",
@@ -28,7 +28,7 @@
             "capsControlID": "ccc_1",
             "capsID": "da65ac5c-2158-4ca1-a11a-b94dfc2f4ed7",
             "connID": "conn_1",
-            "capsPosition": 3
+            "capsPosition": 5
           },
             "ccc_4": {
             "gpID": "ggg_1",
@@ -42,7 +42,7 @@
             "capsControlID": "ccc_1",
             "capsID": "c95b38b3-6e11-4f55-a306-fdb2bb5af7f0",
             "connID": "conn_1",
-            "capsPosition": 5
+            "capsPosition": 1
           }
         }
       }
