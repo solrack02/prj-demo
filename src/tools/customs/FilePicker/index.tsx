@@ -2,7 +2,7 @@
 // ---------- import Packs
 import React from 'react';
 import { Pressable } from 'react-native';
-import * as DocumentPicker from 'expo-document-picker';
+// import * as DocumentPicker from 'expo-document-picker';
 
 // ---------- import Local Tools
 import { getStlValues, mapElements } from '../../base/project';
@@ -20,25 +20,27 @@ type Tprops = {
   };
 };
 
-export const FilePicker = (props: Tprops) => {
-  let { arrChildren, styles, arrFuncs, pathReturn, args } = props.pass;
+export const FilePicker = () => <></>;
 
-  // ---------- set Load Images
-  async function pickDocument() {
-    const result: any = await DocumentPicker.getDocumentAsync({
-      multiple: false,
-    });
+// export const FilePicker = (props: Tprops) => {
+//   let { arrChildren, styles, arrFuncs, pathReturn, args } = props.pass;
 
-    console.log('%cFilePicker', css, result);
-    for (const currFunc of arrFuncs) await currFunc(args, result);
-  }
+//   // ---------- set Load Images
+//   async function pickDocument() {
+//     const result: any = await DocumentPicker.getDocumentAsync({
+//       multiple: false,
+//     });
 
-  const stl = getStlValues(styles);
+//     console.log('%cFilePicker', css, result);
+//     for (const currFunc of arrFuncs) await currFunc(args, result);
+//   }
 
-  return (
-    <Pressable style={[stl]} onPress={() => pickDocument()}>
-      {mapElements(arrChildren, args)}
-    </Pressable>
-  );
-};
+//   const stl = getStlValues(styles);
+
+//   return (
+//     <Pressable style={[stl]} onPress={() => pickDocument()}>
+//       {mapElements(arrChildren, args)}
+//     </Pressable>
+//   );
+// };
 
