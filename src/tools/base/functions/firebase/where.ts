@@ -1,5 +1,5 @@
 
-import { getFirestore, getDocs, collection, where, query } from 'https://unpkg.com/firebase@latest/firebase-firestore.js';
+import { getFirestore, getDocs, collection, where, query } from 'https://unpkg.com/firebase@9.0.0/firebase-firestore.js';
 
 type Tprops = {
   args: any;
