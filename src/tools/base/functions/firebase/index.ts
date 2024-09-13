@@ -24,8 +24,8 @@ const setDoc = () => console.log('setDoc');
 // import { whereConds } from './whereConds';
 const whereConds = () => console.log('whereConds');
 
-// import { where } from './where';
-const where = () => console.log('where');
+import { where } from './where';
+// const where = () => console.log('where');
 
 export const firebase = {
   fireInit,
@@ -42,4 +42,3 @@ export const firebase = {
   whereConds,
   where,
 };
-
