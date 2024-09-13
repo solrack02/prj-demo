@@ -1,5 +1,5 @@
 
-import * as FB_ALL from 'firebase@10.13.1';
+import * as FB_FIRE from 'firebase@10.12.5';
 
 type Tprops = {
   args: any;
@@ -25,8 +25,7 @@ export const where = async (props: Tprops) => {
   // const { getFirestore, getDocs, collection, where, query } = await import(
   //   '@firebase/firestore'
   // );
-  const firestore = FB_ALL;
-  const { getFirestore, getDocs, collection, where, query } = firestore;
+  const { getFirestore, getDocs, collection, where, query } = FB_FIRE;
 
   // ---------- set Caps Inputs
 
