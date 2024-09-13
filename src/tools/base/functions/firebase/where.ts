@@ -1,5 +1,5 @@
 
-import * as FB_FIRE from 'https://unpkg.com/firebase@latest/firebase-firestore.js';
+import * as FB_FIRE from 'firebase@latest/firebase-firestore.js';
 
 type Tprops = {
   args: any;
