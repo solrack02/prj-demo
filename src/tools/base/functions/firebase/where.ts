@@ -1,5 +1,5 @@
 
-import * as FB_FIRE from 'firebase@10.13.1/firebase-firestore-compat.js';
+import { getFirestore, getDocs, collection, where, query } from 'https://unpkg.com/firebase@latest/firebase-firestore.js';
 
 type Tprops = {
   args: any;
@@ -29,7 +29,7 @@ export const where = async (props: Tprops) => {
   // const { getFirestore, getDocs, collection, where, query } = await import(
   //   '@firebase/firestore'
   // );
-  const { getFirestore, getDocs, collection, where, query } = FB_FIRE;
+  // const { getFirestore, getDocs, collection, where, query } = FB_FIRE;
   console.log('Dentro do WHERE 5', where);
 
   // ---------- set Caps Inputs
