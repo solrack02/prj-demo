@@ -17,15 +17,20 @@ export const css2 =
   'color: yellow; background-color: green; font-size: 10px; padding: 2px 6px; border-radius: 3px';
 
 export const where = async (props: Tprops) => {
+  console.log('Dentro do WHERE 1');
+  console.log('Dentro do WHERE 2', FB_FIRE);
   // ---------- set Props
   const { args, pass } = props;
+  console.log('Dentro do WHERE 3', props);
   const { fbInit, arrRefStrings, arrWhere, arrFuncs } = pass;
+  console.log('Dentro do WHERE 4', arrRefStrings);
 
   // ---------- set Local Imports
   // const { getFirestore, getDocs, collection, where, query } = await import(
   //   '@firebase/firestore'
   // );
   const { getFirestore, getDocs, collection, where, query } = FB_FIRE;
+  console.log('Dentro do WHERE 5', where);
 
   // ---------- set Caps Inputs
 
@@ -38,6 +43,7 @@ export const where = async (props: Tprops) => {
   // -----------------------------
   if (!fbInit) return console.log(fbErrMsg1, { fbInit });
   const fireInit: any = getFirestore(fbInit[0]);
+  console.log('Dentro do WHERE 6', fireInit);
 
   const arrConds = [];
   const newArrWh = () => {
@@ -70,3 +76,4 @@ export const where = async (props: Tprops) => {
 
   for (const currFunc of arrFuncs) currFunc(arrDocs, args);
 };
+
