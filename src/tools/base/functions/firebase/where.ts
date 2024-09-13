@@ -1,4 +1,6 @@
 
+import * as FB_FIRE from 'firebase@10.13.1/firestore';
+
 type Tprops = {
   args: any;
   pass: {
@@ -20,9 +22,10 @@ export const where = async (props: Tprops) => {
   const { fbInit, arrRefStrings, arrWhere, arrFuncs } = pass;
 
   // ---------- set Local Imports
-  const { getFirestore, getDocs, collection, where, query } = await import(
-    '@firebase/firestore'
-  );
+  // const { getFirestore, getDocs, collection, where, query } = await import(
+  //   '@firebase/firestore'
+  // );
+  const { getFirestore, getDocs, collection, where, query } = FB_FIRE;
 
   // ---------- set Caps Inputs
 
@@ -67,4 +70,3 @@ export const where = async (props: Tprops) => {
 
   for (const currFunc of arrFuncs) currFunc(arrDocs, args);
 };
-
