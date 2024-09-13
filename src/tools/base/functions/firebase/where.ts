@@ -1,5 +1,5 @@
 
-import * as FB_FIRE from 'firebase@10.13.1/firestore/dist/index.mjs';
+import * as FB_FIRE from 'firebase@10.13.1/firestore/dist';
 
 type Tprops = {
   args: any;
