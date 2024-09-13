@@ -1,7 +1,7 @@
 
 // ---------- import Local Tools
-// import { fireInit } from './fireInit';
-const fireInit = () => console.log('fireInit');
+import { fireInit } from './fireInit';
+// const fireInit = () => console.log('fireInit');
 
 // import { uploadFile } from './uploadFile';
 const uploadFile = () => console.log('uploadFile');
