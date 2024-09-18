@@ -1,4 +1,7 @@
 
+// ---------- import Packs
+import { Platform } from 'react-native';
+
 // ---------- import Local Tools
 import { argSel, getCtData } from '../project';
 
@@ -76,6 +79,14 @@ type Tprops_j8 = {
 };
 export const j8 = (props: Tprops_j8) => {
   const { propertieValues } = props.pass;
+
+  const nativeDevices = Platform.OS !== 'web';
+  const isAString = typeof propertieValues === 'string';
+  const checkValues = isAString && propertieValues?.includes('px');
+
+  if (checkValues && nativeDevices) {
+    return parseInt(propertieValues.replace(/D/g, ''), 10);
+  }
 
   return propertieValues;
 };
